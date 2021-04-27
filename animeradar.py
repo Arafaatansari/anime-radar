@@ -9,4 +9,4 @@ import requests
 if __name__ == '__main__':
 
     gga = gogoanime.GogoAnimeDataCaller(requests.Session())
-    AnimeRadar(gga, download_dir='AnimeRadar - GogoAnime', subscriptions=from_file('subscriptions.txt'))
+    AnimeRadar(gga, download_dir='AnimeRadar - GogoAnime', subscriptions=from_file('subscriptions.txt')).start_radar()
